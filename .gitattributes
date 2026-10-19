@@ -1,0 +1,6 @@
+assets/** linguist-generated
+sw.js linguist-generated
+workbox-*.js linguist-generated
+registerSW.js linguist-generated
+scripts/** linguist-documentation
+index.html linguist-generated
