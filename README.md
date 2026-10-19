@@ -15,19 +15,20 @@ without installing anything.
 The demo seeds itself with synthetic data (about 120 students across six classes, six teachers).
 Everything runs in your browser; nothing is sent to a server.
 
-1. **Teacher:** open the *Teacher* tab, enter `T01`, and create any password on first sign-in.
-   Pick *Class 6A* to take the roll call, then explore Students, Homework, Notices, Timetable,
-   Bulk Marks and the Behaviour Log from the sidebar.
-2. **Principal:** open the *Principal* tab and follow the first-setup prompt on screen to set a
-   password. You get the school overview, attendance and fee trends, alerts, staff attendance,
-   finance, fee structure and grade boundaries.
-3. **Parent:** open the *Parent* tab and use the sample admission number shown on the sign-in
-   screen.
-4. **Admin views:** *System admin* and *Site admin* links sit under the sign-in form (the site
-   admin controls school name and per-module feature toggles).
+**One click:** on the sign-in screen, press **Continue as teacher**, **principal**, **parent** or
+**student**. No account or password is needed.
 
-Your changes are stored in your browser's local storage, so they stay on your device. Clearing
-site data resets the demo.
+- **Teacher:** pick *Class 6A* to take the roll call, then explore Students, Homework, Notices,
+  Timetable, Bulk Marks and the Behaviour Log from the sidebar.
+- **Principal:** the school overview, attendance and fee trends, alerts, staff attendance, finance,
+  fee structure and grade boundaries.
+- **Parent and student:** the family and student views of attendance, homework, fees and notices.
+- **Admin views:** *System admin* and *Site admin* links sit under the sign-in form (the site admin
+  controls school name and per-module feature toggles).
+
+The regular sign-in (teacher number plus a password you create on first use) still works as well.
+Your changes are stored in your browser's local storage, so they stay on your device. Clearing site
+data resets the demo.
 
 ## What's inside
 
