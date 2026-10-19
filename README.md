@@ -30,6 +30,34 @@ The regular sign-in (teacher number plus a password you create on first use) sti
 Your changes are stored in your browser's local storage, so they stay on your device. Clearing site
 data resets the demo.
 
+## Product notes
+
+How I would frame this as a product, and the decisions visible in it. These are design rationale
+and hypotheses; nothing here is a measured result, and the demo has had no real-school pilot.
+
+- **Problem.** Schools run attendance, fees, homework and notices across paper registers, chat
+  groups and spreadsheets, so nobody has one reliable picture of the day.
+- **Users.** Class and subject teachers (daily roll call, marks, homework), the principal
+  (overview, approvals, finance), parents and students (what is due, what is owed), and a site
+  admin who configures the school.
+- **Decisions and trade-offs.**
+  - *Role-based home screens*: each user sees only their job, which keeps the interface small but
+    means more screens to maintain.
+  - *Per-module feature toggles*: a school can adopt gradually instead of switching everything on.
+  - *Teacher self check-in needs principal approval*: gives the school an attendance record for
+    staff, at the cost of one more step.
+  - *Installable and offline-capable (PWA)*: schools often have poor connectivity, so reading and
+    working offline matters more than real-time sync.
+  - *Records split across documents for 2,000+ students*: simpler to build and cheap to run, but
+    it is a scaling shortcut rather than a long-term data model.
+  - *Demo-grade sign-in, documented as such*: fast to build and demo, but not acceptable for real
+    student data (see the security notes in the app's README).
+- **How I would measure it.** Share of classes roll-called by a set time each morning; fee
+  collection ageing; share of parents who read a notice; teacher minutes per roll call.
+- **Next.** Real authentication with per-role access rules, SMS or chat notifications to parents,
+  and fee receipts and exports.
+- **Known gaps.** Synthetic data only; no pilot; the sign-in model is the main blocker for real use.
+
 ## What's inside
 
 React, Vite, Tailwind CSS and Recharts; offline-capable PWA with a service worker; optional
